@@ -9,3 +9,4 @@ using AdventOfCode2025.Day02;
 
 var day02 = new Day02();
 Console.WriteLine(day02.Part1());
+Console.WriteLine(day02.Part2());
