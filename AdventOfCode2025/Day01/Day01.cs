@@ -2,7 +2,7 @@
 
 public class Day01
 {
-    private readonly string[] _inputLines = File.ReadAllLines("G:\\Dev\\AdventOfCode2025\\AdventOfCode2025\\input.txt");
+    private readonly string[] _inputLines = File.ReadAllLines("");
 
     public int Part1()
     {
