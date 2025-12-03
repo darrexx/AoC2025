@@ -14,3 +14,4 @@ using AdventOfCode2025.Day03;
 
 var day03 = new Day03();
 Console.WriteLine(day03.Part1());
+Console.WriteLine(day03.Part2());

@@ -22,4 +22,24 @@ public class Day03
         
         return sum;
     }
+
+    public long Part2()
+    {
+        var batterieRows = _input.Select(x => x.Select((y, index) => ((int)char.GetNumericValue(y), index)).ToArray()).ToArray();
+        var sum = 0L;
+        foreach (var batteryRow in batterieRows)
+        {
+            var startingIndex = 0;
+            var numbersString = string.Empty;
+            for (var i = 11; i >= 0 ; i--)
+            {
+                var largestFirst = batteryRow[startingIndex..^i].MaxBy(x => x.Item1);
+                numbersString += largestFirst.Item1.ToString();
+                startingIndex = largestFirst.index + 1;
+            }
+            sum += long.Parse(numbersString);
+        }
+
+        return sum;
+    }
 }
