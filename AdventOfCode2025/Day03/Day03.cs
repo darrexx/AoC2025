@@ -17,7 +17,7 @@ public class Day03
         {
             var largestFirst = batteryRow[..^1].MaxBy(x => x.Item1);
             var largestSecond = batteryRow[(largestFirst.index+1)..].MaxBy(x => x.Item1);
-            sum += int.Parse(largestFirst.Item1.ToString() + largestSecond.Item1.ToString());
+            sum +=  largestFirst.Item1*10 + largestSecond.Item1;
         }
         
         return sum;
@@ -30,14 +30,14 @@ public class Day03
         foreach (var batteryRow in batterieRows)
         {
             var startingIndex = 0;
-            var numbersString = string.Empty;
+            var batteries = 0L;
             for (var i = 11; i >= 0 ; i--)
             {
                 var largestFirst = batteryRow[startingIndex..^i].MaxBy(x => x.Item1);
-                numbersString += largestFirst.Item1.ToString();
+                batteries = batteries*10 + largestFirst.Item1;
                 startingIndex = largestFirst.index + 1;
             }
-            sum += long.Parse(numbersString);
+            sum += batteries;
         }
 
         return sum;
