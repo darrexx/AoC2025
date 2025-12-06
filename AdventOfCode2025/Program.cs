@@ -4,6 +4,7 @@ using AdventOfCode2025.Day01;
 using AdventOfCode2025.Day02;
 using AdventOfCode2025.Day03;
 using AdventOfCode2025.Day04;
+using AdventOfCode2025.Day05;
 
 // var day01 = new Day01();
 // Console.WriteLine(day01.Part1());
@@ -17,6 +18,10 @@ using AdventOfCode2025.Day04;
 // Console.WriteLine(day03.Part1());
 // Console.WriteLine(day03.Part2());
 
-var day04 = new Day04();
-Console.WriteLine(day04.Part1());
-Console.WriteLine(day04.Part2());
+// var day04 = new Day04();
+// Console.WriteLine(day04.Part1());
+// Console.WriteLine(day04.Part2());
+
+var day05 = new Day05();
+Console.WriteLine(day05.Part1());
+Console.WriteLine(day05.Part2());
